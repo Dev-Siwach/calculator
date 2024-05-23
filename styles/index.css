@@ -1,0 +1,189 @@
+/* not used in website */
+/* div {
+    border: 1px solid black;
+} */
+
+/* actual styles */
+
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+#wholeBody {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+#header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+#footer {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+}
+
+#headerLinks {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    height: 60px;
+    width: 60px;
+}
+
+#home {
+    height: 60px;
+    width: 60px;
+}
+
+#colorMode.heading {
+    margin-right: 50px;
+    display: flex;
+    gap: 30px;
+    padding: 5px 20px;
+}
+
+#darkmode-toggle {
+    width: 0px;
+    height: 0px;
+    visibility: hidden;
+}
+
+#darkmode-toggle-label {
+    height: 40px;
+    width: 80px;
+    display: block;
+    position: relative;
+    background-color: #dadada;
+    border-radius: 200px;
+    border: 0px;
+    box-shadow: inset 0px 0px 3px #000000, inset 0px 0px 2px #b4b4b4ad;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+#darkmode-toggle-label::after {
+    content: "";
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    border-radius: 150px;
+    top: 5px;
+    left: 5px;
+    background: linear-gradient(180deg, #c49329, #f0bd30);
+    box-shadow: 0px 0px 2px #000000;
+    transition: all 1s;
+}
+
+#darkmode-toggle:checked+#darkmode-toggle-label {
+    background: #444444;
+}
+
+#darkmode-toggle:checked+#darkmode-toggle-label::after {
+    left: 45px;
+    background: linear-gradient(180deg, #155088, #3c67a8);
+}
+
+/* main calculator body */
+
+#mainBody {
+    display: flex;
+    flex-grow: 2;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../resources/images/main-content-background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#calculatorBody {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 300px;
+    border-radius: 30px;
+    padding: 10px;
+    background: #0511198f;
+}
+
+#calculatorDisplay {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0px;
+    padding: 10px 0px;
+    gap: 10px;
+    background: #00000000;
+}
+
+#expression {
+    flex-grow: 2;
+    width: 100%;
+}
+
+#result {
+    flex-grow: 1;
+    width: 100%;
+}
+
+#calculatorButtons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 30px;
+    background: #00000000;
+}
+
+.buttonRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+#equalToButton {
+    width: 130px;
+}
+
+.userInputButton {
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    font-size: large;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #00000000;
+    border: 0;
+    box-shadow: inset 3px 3px 8px #d8d8d87a;
+}
+
+.blueButton,
+#equalToButton {
+    background-color: #102831a8;
+}
+
+.blueFont {
+    color: #abe7ff;
+}

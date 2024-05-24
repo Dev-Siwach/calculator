@@ -119,9 +119,10 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     width: 300px;
-    border-radius: 30px;
-    padding: 10px;
+    border-radius: 15px;
+    padding: 15px;
     background: #0511198f;
+    box-shadow: inset 0px 0px 10px 0px #ffffff6e;
 }
 
 #calculatorDisplay {

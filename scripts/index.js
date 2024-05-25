@@ -38,28 +38,30 @@ backspace.addEventListener("click", function () {
     let newExpression = expression.textContent.slice(0, expression.textContent.length - 1);
     return expression.textContent = newExpression;
 })
-divide.addEventListener("click", function () { expression.textContent += " ÷ "; })
+divide.addEventListener("click", function () {
+    expression.textContent += " ÷ ";
+})
 remainder.addEventListener("click", function () { expression.textContent += " % "; })
 product.addEventListener("click", function () { expression.textContent += " x "; })
 minus.addEventListener("click", function () { expression.textContent += " - "; })
 plus.addEventListener("click", function () { expression.textContent += " + "; })
 point.addEventListener("click", function () { expression.textContent += "."; })
-equalToButton.addEventListener("click", function () {
-    if (expression.textContent.includes(" + ") === true) {
-        let expressionArray = expression.textContent.split(" + ");
-        result.textContent = parseFloat(expressionArray[0]) + parseFloat(expressionArray[1]);
-    } else if (expression.textContent.includes(" - ") === true) {
-        let expressionArray = expression.textContent.split(" - ");
-        result.textContent = parseFloat(expressionArray[0]) - parseFloat(expressionArray[1]);
+equalToButton.addEventListener("click", function solve() {
+    if (expression.textContent.includes(" ÷ ") === true) {
+        let expressionArray = expression.textContent.split(" ÷ ");
+        result.textContent = parseFloat(expressionArray[0]) / parseFloat(expressionArray[1]);
     } else if (expression.textContent.includes(" x ") === true) {
         let expressionArray = expression.textContent.split(" x ");
         result.textContent = parseFloat(expressionArray[0]) * parseFloat(expressionArray[1]);
     } else if (expression.textContent.includes(" % ") === true) {
         let expressionArray = expression.textContent.split(" % ");
         result.textContent = parseFloat(expressionArray[0]) % parseFloat(expressionArray[1]);
-    } else if (expression.textContent.includes(" ÷ ") === true) {
-        let expressionArray = expression.textContent.split(" ÷ ");
-        result.textContent = parseFloat(expressionArray[0]) / parseFloat(expressionArray[1]);
+    } else if (expression.textContent.includes(" + ") === true) {
+        let expressionArray = expression.textContent.split(" + ");
+        result.textContent = parseFloat(expressionArray[0]) + parseFloat(expressionArray[1]);
+    } else if (expression.textContent.includes(" - ") === true) {
+        let expressionArray = expression.textContent.split(" - ");
+        result.textContent = parseFloat(expressionArray[0]) - parseFloat(expressionArray[1]);
     }
 })
 

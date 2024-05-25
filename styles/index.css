@@ -129,22 +129,30 @@ body {
     height: 150px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     margin: 10px 0px;
     padding: 10px 0px;
-    gap: 10px;
     background: #00000000;
 }
 
 #expression {
-    flex-grow: 2;
+    flex-grow: 1;
     width: 100%;
+    font-size: large;
+    color: #abe7ff;
+    text-align: end;
+    overflow-wrap: break-word;
 }
 
 #result {
-    flex-grow: 1;
+    flex-grow: 2;
     width: 100%;
+    font-size: 1.8em;
+    font-weight: bolder;
+    color: #ffffff;
+    text-align: end;
+    overflow-wrap: break-word;
 }
 
 #calculatorButtons {

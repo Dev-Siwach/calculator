@@ -2,18 +2,18 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Calculator
-    </title>
-    <script src="./scripts/index.js" defer></script>
-    <link rel="stylesheet" href="./styles/index.css">
-    <link rel="icon" href="./resources/images/icons8-calculator-32.ico" type="image/x-icon">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <title>Calculator
+        </title>
+        <script src="./scripts/index.js" defer></script>
+        <link rel="stylesheet" href="./styles/index.css">
+        <link rel="icon" href="./resources/images/icons8-calculator-32.ico" type="image/x-icon">
 </head>
 
 <body>
-    <div id="wholeBody">
-        <!-- <div id="header">
+        <div id="wholeBody">
+                <!-- <div id="header">
             <div id="headerLinks" class="heading">
                 <a href="#"><img id="home" src="./resources/images/home.png" alt="Home"></a>
             </div>
@@ -22,84 +22,89 @@
                 <label for="darkmode-toggle" id="darkmode-toggle-label"></label>
             </div>
         </div> -->
-        <div id="mainBody">
-            <div id="calculatorBody">
-                <div id="calculatorDisplay">
-                    <div id="expression"></div>
-                    <div id="result"></div>
+                <div id="mainBody">
+                        <div id="calculatorBody">
+                                <div id="calculatorDisplay">
+                                        <div id="expression"></div>
+                                        <div id="result"></div>
+                                </div>
+                                <div id="calculatorButtons">
+                                        <div id="buttonRow1" class="buttonRow">
+                                                <div id="buttonColumn1" class="userInputButtonDiv"><button
+                                                                class="userInputButton blueFont" id="clear">AC</button>
+                                                </div>
+                                                <div id="buttonColumn2" class="userInputButtonDiv"><button
+                                                                class="userInputButton blueFont" id="backspace">←
+                                                        </button>
+                                                </div>
+                                                <div id="buttonColumn3" class="userInputButtonDiv"><button
+                                                                class="userInputButton blueFont"
+                                                                id="remainder">%</button>
+                                                </div>
+                                                <div id="buttonColumn4" class="userInputButtonDiv"><button
+                                                                class="userInputButton blueButton"
+                                                                id="divide">÷</button>
+                                                </div>
+                                        </div>
+                                        <div id="buttonRow2" class="buttonRow">
+                                                <div id="buttonColumn1" class="userInputButtonDiv"><button
+                                                                class="userInputButton" id="numberSeven">7</button>
+                                                </div>
+                                                <div id="buttonColumn2" class="userInputButtonDiv"><button
+                                                                class="userInputButton" id="numberEight">8</button>
+                                                </div>
+                                                <div id="buttonColumn3" class="userInputButtonDiv"><button
+                                                                class="userInputButton" id="numberNine">9</button>
+                                                </div>
+                                                <div id="buttonColumn4" class="userInputButtonDiv"><button
+                                                                class="userInputButton blueButton"
+                                                                id="product">x</button>
+                                                </div>
+                                        </div>
+                                        <div id="buttonRow3" class="buttonRow">
+                                                <div id="buttonColumn1" class="userInputButtonDiv"><button
+                                                                class="userInputButton" id="numberFour">4</button>
+                                                </div>
+                                                <div id="buttonColumn2" class="userInputButtonDiv"><button
+                                                                class="userInputButton" id="numberFive">5</button>
+                                                </div>
+                                                <div id="buttonColumn3" class="userInputButtonDiv"><button
+                                                                class="userInputButton" id="numberSix">6</button>
+                                                </div>
+                                                <div id="buttonColumn4" class="userInputButtonDiv"><button
+                                                                class="userInputButton blueButton" id="minus">-</button>
+                                                </div>
+                                        </div>
+                                        <div id="buttonRow4" class="buttonRow">
+                                                <div id="buttonColumn1" class="userInputButtonDiv"><button
+                                                                class="userInputButton" id="numberOne">1</button>
+                                                </div>
+                                                <div id="buttonColumn2" class="userInputButtonDiv"><button
+                                                                class="userInputButton" id="numberTwo">2</button>
+                                                </div>
+                                                <div id="buttonColumn3" class="userInputButtonDiv"><button
+                                                                class="userInputButton" id="numberThree">3</button>
+                                                </div>
+                                                <div id="buttonColumn4" class="userInputButtonDiv"><button
+                                                                class="userInputButton blueButton" id="plus">+</button>
+                                                </div>
+                                        </div>
+                                        <div id="buttonRow5" class="buttonRow">
+                                                <div id="buttonColumn1" class="userInputButtonDiv"><button
+                                                                class="userInputButton" id="numberZero">0</button>
+                                                </div>
+                                                <div id="buttonColumn2" class="userInputButtonDiv"><button
+                                                                class="userInputButton" id="point">.</button>
+                                                </div>
+                                                <div id="buttonColumn3" class="userInputButtonDiv"><button
+                                                                class="userInputButton" id="equalToButton">=</button>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
                 </div>
-                <div id="calculatorButtons">
-                    <div id="buttonRow1" class="buttonRow">
-                        <div id="buttonColumn1" class="userInputButtonDiv"><button
-                                class="userInputButton blueFont">AC</button>
-                        </div>
-                        <div id="buttonColumn2" class="userInputButtonDiv"><button
-                                class="userInputButton blueFont">+/-</button>
-                        </div>
-                        <div id="buttonColumn3" class="userInputButtonDiv"><button
-                                class="userInputButton blueFont">%</button>
-                        </div>
-                        <div id="buttonColumn4" class="userInputButtonDiv"><button
-                                class="userInputButton blueButton">÷</button>
-                        </div>
-                    </div>
-                    <div id="buttonRow2" class="buttonRow">
-                        <div id="buttonColumn1" class="userInputButtonDiv"><button class="userInputButton"
-                                id="numberSeven">7</button>
-                        </div>
-                        <div id="buttonColumn2" class="userInputButtonDiv"><button class="userInputButton"
-                                id="numberEight">8</button>
-                        </div>
-                        <div id="buttonColumn3" class="userInputButtonDiv"><button class="userInputButton"
-                                id="numberNine">9</button>
-                        </div>
-                        <div id="buttonColumn4" class="userInputButtonDiv"><button
-                                class="userInputButton blueButton">x</button>
-                        </div>
-                    </div>
-                    <div id="buttonRow3" class="buttonRow">
-                        <div id="buttonColumn1" class="userInputButtonDiv"><button class="userInputButton"
-                                id="numberFour">4</button>
-                        </div>
-                        <div id="buttonColumn2" class="userInputButtonDiv"><button class="userInputButton"
-                                id="numberFive">5</button>
-                        </div>
-                        <div id="buttonColumn3" class="userInputButtonDiv"><button class="userInputButton"
-                                id="numberSix">6</button>
-                        </div>
-                        <div id="buttonColumn4" class="userInputButtonDiv"><button
-                                class="userInputButton blueButton">-</button>
-                        </div>
-                    </div>
-                    <div id="buttonRow4" class="buttonRow">
-                        <div id="buttonColumn1" class="userInputButtonDiv"><button class="userInputButton"
-                                id="numberOne">1</button>
-                        </div>
-                        <div id="buttonColumn2" class="userInputButtonDiv"><button class="userInputButton"
-                                id="numberTwo">2</button>
-                        </div>
-                        <div id="buttonColumn3" class="userInputButtonDiv"><button class="userInputButton"
-                                id="numberThree">3</button>
-                        </div>
-                        <div id="buttonColumn4" class="userInputButtonDiv"><button
-                                class="userInputButton blueButton">+</button>
-                        </div>
-                    </div>
-                    <div id="buttonRow5" class="buttonRow">
-                        <div id="buttonColumn1" class="userInputButtonDiv"><button class="userInputButton"
-                                id="numberZero">0</button>
-                        </div>
-                        <div id="buttonColumn2" class="userInputButtonDiv"><button class="userInputButton">.</button>
-                        </div>
-                        <div id="buttonColumn3" class="userInputButtonDiv"><button class="userInputButton"
-                                id="equalToButton">=</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                <!-- <div id="footer">creates by ~ <span>Dev</span></div> -->
         </div>
-        <!-- <div id="footer">creates by ~ <span>Dev</span></div> -->
-    </div>
 </body>
 
 </html>
